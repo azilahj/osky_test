@@ -1,0 +1,164 @@
+:root {
+    --ui-typography-typeface: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: var(--ui-typography-typeface);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #00AEEF;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-decoration: none;
+    /* max-width: 1140px; */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    font-weight: 200;
+    text-decoration: none;
+
+}
+
+nav .top {
+    text-decoration: none;
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    padding: 1rem;
+    /* float:right; */
+}
+
+nav ul .top a {
+    color: #00AEEF;
+    font-family: var(--ui-typography-typeface);
+    text-decoration: none;
+    text-align: right;
+}
+
+nav ul .second a {
+    color: #000000;
+    font-family: var(--ui-typography-typeface);
+    text-decoration: none;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav ul .third {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.modal-overlay {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top a{
+    color: #00AEEF;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.second a{
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-right: 1rem;
+}
+
+.modal-overlay a{
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding-right: 1rem;
+}
+
+.modal-close{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.modal-overlay nav ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul .top,
+    nav ul .second,
+    nav ul .third {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul .top,
+    nav ul .second,
+    nav ul .third {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+}

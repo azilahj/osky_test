@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSKY - Frontend Test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="https://i.imgur.com/9fx89Br.png" width="150">
+        <nav>
+            <ul class="top">
+                <li><a href="#youtube" onclick="confirm('The page will navigate to a different domain. Confirm?')"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="#twitter" onclick="confirm('The page will navigate to a different domain. Confirm?')"><i
+                            class="fab fa-twitter"></i></a></li>
+                <li><a href="#linkedin" onclick="confirm('The page will navigate to a different domain. Confirm?')"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#logout">Logout</a></li>
+                <li><a href="#dashboard">My Dashboard</a></li>
+            </ul>
+            <ul class="second">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#safetytools">Safety Tools</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#engagement">Engagement</a></li>
+                <li><a href="#membership" onclick="openMembership()">Membership</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="modal-overlay" id="modalOverlay" style="display:none;">
+        <div class="modal-content">
+            <center>
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <nav>
+                    <ul class="third">
+                        <li><a href="#latestnews">Latest News</a></li>
+                        <li><a href="#newsletters">Subscribe to Newsletters</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                    </ul>
+                </nav>
+            </center>
+        </div>
+    </div>
+
+    <div class="part-container">
+    </div>
+
+    <script>
+        function openMembership() {
+            var modalOverlay = document.getElementById('modalOverlay');
+            if (modalOverlay.style.display === 'none') {
+                modalOverlay.style.display = 'block';
+            } else {
+                modalOverlay.style.display = 'none';
+            }
+        }
+
+        function closeModal() {
+            var modalOverlay = document.getElementById('modalOverlay');
+            modalOverlay.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
